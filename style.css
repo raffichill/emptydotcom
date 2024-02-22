@@ -47,6 +47,8 @@ p {
     max-width: 520px; 
     line-height: 1.4em;
     text-align: center;
+    padding-left: 16;
+    padding-right: 16;
 }
 
 a {
