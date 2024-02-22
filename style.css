@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Geist-SemiBold';
-    src: url('./fonts/Geist-Bold.woff2') format('woff2'),
+    src: url('./fonts/Geist-SemiBold.woff2') format('woff2'),
 }
 
 
@@ -22,12 +22,12 @@
 
 @font-face {
     font-family: 'GeistMono-Regular';
-    src: url('./fonts/GeistMono-Medium.woff2') format('woff2'),
+    src: url('./fonts/GeistMono-Regular.woff2') format('woff2'),
 }
 
 @font-face {
     font-family: 'Geist-Regular';
-    src: url('./fonts/GeistMono-Medium.woff2') format('woff2'),
+    src: url('./fonts/Geist-Regular.woff2') format('woff2'),
 }
 
 body {
@@ -52,7 +52,7 @@ h1 {
 }
 
 p {
-    font-family: 'GeistMono-Regular', Arial, sans-serif;
+    font-family: 'Geist-Regular', Arial, sans-serif;
     color: #555;
     max-width: 520px; 
     line-height: 1.4em;
