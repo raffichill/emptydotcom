@@ -49,6 +49,8 @@ p {
     text-align: center;
     padding-left: 16;
     padding-right: 16;
+    margin-left: 16;
+    margin-right: 16;
 }
 
 a {
