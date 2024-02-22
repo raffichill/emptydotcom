@@ -55,6 +55,13 @@ p {
     text-align: left;
 }
 
+.p2 {
+    font-family: 'Geist-Regular', Arial, sans-serif;
+    color: #555;
+    line-height: 1.4em;
+    text-align: center;
+}
+
 a {
     text-decoration: none; /* Removes the underline */
     color: #0066cc; /* Optional: Changes the link color */
