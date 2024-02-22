@@ -1,10 +1,5 @@
 
 @font-face {
-    font-family: 'Geist-Bold';
-    src: url('./fonts/Geist-Bold.woff2') format('woff2'),
-}
-
-@font-face {
     font-family: 'Geist-SemiBold';
     src: url('./fonts/Geist-SemiBold.woff2') format('woff2'),
 }
@@ -13,11 +8,6 @@
 @font-face {
     font-family: 'Geist-Medium';
     src: url('./fonts/Geist-Medium.woff2') format('woff2'),
-}
-
-@font-face {
-    font-family: 'GeistMono-Medium';
-    src: url('./fonts/GeistMono-Medium.woff2') format('woff2'),
 }
 
 @font-face {
