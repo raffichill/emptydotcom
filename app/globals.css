@@ -5,8 +5,8 @@
 }
 
 html {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 17px;
+  line-height: 1.6;
   color: var(--color-primary);
 }
 
@@ -16,6 +16,7 @@ html {
   --color-grey: #818181;
   --color-white: #fff;
   --color-orange-light: #ffede6;
+  --color-orange-light-hover: #f6ddd3;
   --color-orange-dark: #ff4f04;
 
   /* Transitions */

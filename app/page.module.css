@@ -1,7 +1,8 @@
 .header {
   font-size: 1rem;
-  margin: 0;
+  margin: 0 auto;
   font-weight: normal;
+  max-width: 400px;
 }
 
 .header strong {
@@ -12,7 +13,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 3.5rem;
 }
 
 .ctaSection {
@@ -47,9 +48,13 @@
   border-radius: 10rem;
   cursor: pointer;
   width: 140px;
-  transition: color 250ms, background 250ms, width 250ms var(--bounce-easing);
+  transition: color 250ms, background 100ms, width 250ms var(--bounce-easing);
   align-items: center;
   overflow: hidden;
+}
+
+.button:hover {
+  background: var(--color-orange-light-hover);
 }
 
 .buttonActive .button {
