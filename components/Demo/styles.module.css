@@ -1,6 +1,7 @@
 .demo {
   position: relative;
   filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.25));
+  margin: -18px 0;
 }
 
 .demoDevice {

@@ -15,8 +15,8 @@ html {
   --color-black: #000;
   --color-grey: #818181;
   --color-white: #fff;
-  --color-orange-light: #ffeee7;
-  --color-orange-dark: #d85325;
+  --color-orange-light: #ffede6;
+  --color-orange-dark: #ff4f04;
 
   /* Transitions */
   --bounce-easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
