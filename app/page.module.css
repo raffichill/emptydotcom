@@ -103,23 +103,3 @@
   top: 0;
   opacity: 1;
 }
-
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
-
-.nav li {
-  margin: 0 0.75rem;
-}
-
-.nav a {
-  text-decoration: none;
-  color: var(--color-black);
-}
-
-.nav a:hover {
-  text-decoration: underline;
-}

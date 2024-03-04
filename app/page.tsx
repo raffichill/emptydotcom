@@ -2,11 +2,11 @@
 
 import AppIcon from "@/components/AppIcon"
 import Demo from "@/components/Demo"
+import Footer from "@/components/Footer"
 import Main from "@/components/Main"
 import Testimonials from "@/components/Testimonials"
 import classNames from "classnames"
 import Image from "next/image"
-import Link from "next/link"
 import { useState } from "react"
 import styles from "./page.module.css"
 
@@ -15,16 +15,18 @@ export default function Page() {
 
   return (
     <Main>
-      <section
+      <div
         className={classNames(styles.flex, {
           [styles.buttonActive]: downloadActive,
         })}
       >
-        <h1 className={styles.header}>
-          <strong>Empty</strong> is a beautiful and minimal companion for your
-          intermittent fasting practice.
-        </h1>
-        <div className={styles.ctaSection}>
+        <header>
+          <h1 className={styles.header}>
+            <strong>Empty</strong> is a beautiful and minimal companion for your
+            intermittent fasting practice.
+          </h1>
+        </header>
+        <section className={styles.ctaSection}>
           <button
             onClick={() => setDownloadActive((prev) => !prev)}
             className={styles.button}
@@ -43,41 +45,26 @@ export default function Page() {
               />
             </div>
           </div>
-        </div>
-        <div className={styles.ctaSectionMobile}>
+        </section>
+        <section className={styles.ctaSectionMobile}>
           <a
             href="https://testflight.apple.com/join/1Ex8uyu7"
             className={styles.button}
           >
             <div className={styles.buttonInner}>Download</div>
           </a>
-        </div>
-        <div className={styles.demoSection}>
+        </section>
+        <section className={styles.demoSection}>
           <Demo />
-        </div>
-        <div className={styles.testimonialsSection}>
+        </section>
+        <section className={styles.testimonialsSection}>
           <Testimonials />
-        </div>
-        <div className={styles.appIconSection}>
+        </section>
+        <section className={styles.appIconSection}>
           <AppIcon />
-        </div>
-        <div>
-          <ul className={styles.nav}>
-            <li>
-              <Link href="/privacy">Privacy</Link>
-            </li>
-            <li>
-              <Link href="/terms">Terms of Use</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-            <li>
-              <a href="https://notion.so">Press Kit</a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+        <Footer />
+      </div>
     </Main>
   )
 }
