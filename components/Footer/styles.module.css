@@ -1,0 +1,28 @@
+.footer ul {
+  list-style: none;
+}
+
+.footer li {
+  margin: 0.5rem 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer li {
+    margin: 0 0.75rem;
+  }
+}
