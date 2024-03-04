@@ -1,0 +1,14 @@
+.main {
+  padding: 5rem 20px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 10vw 20px;
+  }
+}
+
+.limit {
+  max-width: 380px;
+  margin: 0 auto;
+}

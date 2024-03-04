@@ -1,0 +1,100 @@
+.header {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: normal;
+}
+
+.header strong {
+  font-weight: 600;
+}
+
+.flex {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ctaSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .ctaSection {
+    display: flex;
+  }
+  .ctaSectionMobile {
+    display: none;
+  }
+}
+
+.appIconSection {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: inline-flex;
+  background: var(--color-orange-light);
+  color: var(--color-orange-dark);
+  text-decoration: none;
+  border: 0;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 10rem;
+  cursor: pointer;
+  width: 140px;
+  transition: color 250ms, background 250ms, width 250ms var(--bounce-easing);
+  align-items: center;
+  overflow: hidden;
+}
+
+.buttonActive .button {
+  background: var(--color-black);
+  color: var(--color-white);
+  width: 210px;
+  cursor: default;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.buttonInner {
+  width: 210px;
+  flex-shrink: 0;
+  text-align: center;
+  position: relative;
+  left: -35px;
+  transition: left 250ms var(--bounce-easing);
+}
+
+.buttonActive .buttonInner {
+  left: 0;
+}
+
+.qrSection {
+  overflow: hidden;
+  height: 0;
+  transition: height 250ms var(--bounce-easing);
+}
+
+.buttonActive .qrSection {
+  height: 160px;
+}
+
+.qr {
+  opacity: 0;
+  margin-top: 1rem;
+  position: relative;
+  top: 5rem;
+  transition: opacity 250ms, top 250ms var(--bounce-easing);
+}
+
+.buttonActive .qr {
+  top: 0;
+  opacity: 1;
+}

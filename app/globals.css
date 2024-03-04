@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-primary);
+}
+
+:root {
+  /* Colors */
+  --color-black: #000;
+  --color-grey: #818181;
+  --color-white: #fff;
+  --color-orange-light: #ffeee7;
+  --color-orange-dark: #d85325;
+
+  /* Transitions */
+  --bounce-easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+::selection {
+  background-color: var(--color-orange-light);
+}
