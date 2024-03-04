@@ -16,7 +16,7 @@ export default function AppIcon() {
     return () => clearInterval(interval)
   }, [curFrame])
 
-  const backgroundPosition = `0 -${curFrame * 100}px`
+  const backgroundPosition = `0 -${curFrame * 120}px`
 
   return <div className={styles.icon} style={{ backgroundPosition }}></div>
 }

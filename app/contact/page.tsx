@@ -1,4 +1,9 @@
 import Main from "@/components/Main"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Contact – Empty Fasting",
+}
 
 export default function Page() {
   return (

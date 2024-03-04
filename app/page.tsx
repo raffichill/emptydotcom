@@ -6,6 +6,7 @@ import Main from "@/components/Main"
 import Testimonials from "@/components/Testimonials"
 import classNames from "classnames"
 import Image from "next/image"
+import Link from "next/link"
 import { useState } from "react"
 import styles from "./page.module.css"
 
@@ -37,8 +38,8 @@ export default function Page() {
               <Image
                 src="/qr-code.png"
                 alt="QR code"
-                width={160}
-                height={160}
+                width={200}
+                height={200}
               />
             </div>
           </div>
@@ -59,6 +60,22 @@ export default function Page() {
         </div>
         <div className={styles.appIconSection}>
           <AppIcon />
+        </div>
+        <div>
+          <ul className={styles.nav}>
+            <li>
+              <Link href="/privacy">Privacy</Link>
+            </li>
+            <li>
+              <Link href="/terms">Terms of Use</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+            <li>
+              <a href="https://notion.so">Press Kit</a>
+            </li>
+          </ul>
         </div>
       </section>
     </Main>

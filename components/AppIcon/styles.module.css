@@ -1,8 +1,9 @@
 .icon {
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 25px;
   background: url("/icon-sprite.png") no-repeat;
-  background-size: 100px 1800px;
+  background-size: 120px 2160px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+  transform: rotate(-3deg);
 }
