@@ -22,8 +22,8 @@ export default function Page() {
       >
         <header>
           <h1 className={styles.header}>
-            <strong>Empty</strong> is a beautiful and minimal companion for your
-            intermittent fasting practice.
+            <span className="font-mono">Empty</span> is a beautiful and minimal
+            companion for your intermittent fasting practice.
           </h1>
         </header>
         <section className={styles.ctaSection}>

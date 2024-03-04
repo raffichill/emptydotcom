@@ -1,3 +1,4 @@
+import classNames from "classnames"
 import styles from "./styles.module.css"
 
 interface MainProps {
@@ -6,7 +7,7 @@ interface MainProps {
 
 export default function Main({ children }: MainProps) {
   return (
-    <main className={styles.main}>
+    <main className={classNames(["font-sans", styles.main])}>
       <div className={styles.limit}>{children}</div>
     </main>
   )

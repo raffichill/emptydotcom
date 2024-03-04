@@ -1,0 +1,14 @@
+.richText {
+  margin: 3rem 0;
+}
+.richText p {
+  margin: 0.5rem 0;
+}
+
+.richText a {
+  color: var(--color-orange-dark);
+}
+
+.richText a:hover {
+  color: var(--color-black);
+}

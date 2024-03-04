@@ -1,9 +1,14 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { DM_Mono, Inter } from "next/font/google"
 import "normalize.css/normalize.css"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ variable: "--font-sans", subsets: ["latin"] })
+const dmMono = DM_Mono({
+  variable: "--font-mono",
+  weight: "500",
+  subsets: ["latin"],
+})
 
 export const metadata: Metadata = {
   title: "Empty Fasting",
@@ -18,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={[dmMono.variable, inter.variable].join(" ")}>
+        {children}
+      </body>
     </html>
   )
 }

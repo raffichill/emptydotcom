@@ -1,0 +1,23 @@
+.button {
+  display: inline-flex;
+  background: var(--color-orange-light);
+  color: var(--color-orange-dark);
+  text-decoration: none;
+  border: 0;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 10rem;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  transition: background 100ms;
+  align-items: center;
+  overflow: hidden;
+}
+
+.button:hover {
+  background: var(--color-orange-light-hover);
+}
+
+.button:active {
+  transform: scale(0.95);
+}

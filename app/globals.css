@@ -26,3 +26,11 @@ html {
 ::selection {
   background-color: var(--color-orange-light);
 }
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
