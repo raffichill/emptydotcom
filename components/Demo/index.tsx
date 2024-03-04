@@ -13,7 +13,7 @@ export default function Demo() {
         width={946}
         height={1864}
       />
-      <video autoPlay muted loop className={styles.demoVideo}>
+      <video autoPlay playsInline muted loop className={styles.demoVideo}>
         <source src="/demo.mp4" type="video/mp4" />
       </video>
     </div>
