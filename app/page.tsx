@@ -20,12 +20,18 @@ export default function Page() {
           })}
         >
           <div>
-            <header>
-              <h1 className={styles.header}>Empty</h1>
-              <h2 className={styles.subHeader}>
+            <header className={styles.desktopHeader}>
+              <h1 className={styles.title}>Empty</h1>
+              <h2 className={styles.subtitle}>
                 A beautiful and minimal companion for your intermittent fasting
                 practice.
               </h2>
+            </header>
+            <header className={styles.mobileHeader}>
+              <h1 className={styles.mobileTitle}>
+                <span className="font-mono">Empty</span> is beautiful and
+                minimal companion for your intermittent fasting practice.
+              </h1>
             </header>
             <section className={styles.ctaSectionDesktop}>
               <div className={styles.appIcon}>
@@ -51,10 +57,13 @@ export default function Page() {
               </a>
             </section>
           </div>
+          <div className={styles.mobileDemo}>
+            <Demo />
+          </div>
           <Footer />
         </div>
       </Card>
-      <div className={styles.demo}>
+      <div className={styles.desktopDemo}>
         <Demo />
       </div>
     </Main>

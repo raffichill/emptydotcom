@@ -8,6 +8,8 @@
 
 .footer li {
   margin: 0.5rem 0;
+  display: inline-block;
+  margin: 0 0.5rem;
 }
 
 .footer a {
@@ -20,12 +22,6 @@
 }
 
 @media (min-width: 1000px) {
-  .footer ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
   .footer li {
     margin: 0 2rem 0 0;
   }
