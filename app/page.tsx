@@ -31,10 +31,10 @@ export default function Page() {
 
             {/* Mobile header */}
             <header className={styles.mobileHeader}>
-              <h1 className={styles.mobileTitle}>
+              <p className={styles.mobileTitle}>
                 <span className="font-mono">Empty</span> is beautiful and
                 minimal companion for your intermittent fasting practice.
-              </h1>
+              </p>
             </header>
 
             {/* Desktop CTA */}
