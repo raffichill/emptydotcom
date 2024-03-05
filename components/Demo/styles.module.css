@@ -2,7 +2,7 @@
   position: relative;
   max-width: 360px;
   opacity: 0;
-  animation: fadeIn 250ms 500ms forwards;
+  animation: fadeIn 250ms 250ms forwards;
 }
 
 @keyframes fadeIn {
