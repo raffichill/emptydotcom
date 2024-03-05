@@ -32,7 +32,7 @@ export default function Page() {
             {/* Mobile header */}
             <header className={styles.mobileHeader}>
               <p className={styles.mobileTitle}>
-                <span className="font-mono">Empty</span> is beautiful and
+                <span className="font-mono">Empty</span> is a beautiful and
                 minimal companion for your intermittent fasting practice.
               </p>
             </header>
