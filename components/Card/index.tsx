@@ -5,5 +5,9 @@ interface CardProps {
 }
 
 export default function Card({ children }: CardProps) {
-  return <div className={styles.card}>{children}</div>
+  return (
+    <div className={styles.cardWrap}>
+      <div className={styles.card}>{children}</div>
+    </div>
+  )
 }

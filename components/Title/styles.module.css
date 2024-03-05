@@ -1,4 +1,11 @@
 .title {
-  font-size: 1.05rem;
+  font-size: 18px;
   font-family: var(--font-mono);
+  font-weight: 400;
+}
+
+@media (min-width: 1000px) {
+  .title {
+    font-size: 32px;
+  }
 }

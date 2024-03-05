@@ -12,7 +12,7 @@ import styles from "./page.module.css"
 export default function Page() {
   const [downloadActive, setDownloadActive] = useState(false)
   return (
-    <Main>
+    <Main background="grey">
       <Card>
         <div
           className={classNames(styles.cardLayout, {

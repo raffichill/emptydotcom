@@ -1,5 +1,6 @@
 import BackButton from "@/components/BackButton"
 import Main from "@/components/Main"
+import PagePad from "@/components/PageLayout"
 import RichText from "@/components/RichText"
 import Title from "@/components/Title"
 import { Metadata } from "next"
@@ -10,8 +11,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Main>
-      <section>
+    <Main background="white">
+      <PagePad>
         <Title>Contact Us</Title>
         <RichText>
           <p>
@@ -25,7 +26,7 @@ export default function Page() {
           </p>
         </RichText>
         <BackButton />
-      </section>
+      </PagePad>
     </Main>
   )
 }

@@ -3,10 +3,18 @@ import styles from "./styles.module.css"
 
 interface MainProps {
   children: React.ReactNode
+  background: "grey" | "white"
 }
 
-export default function Main({ children }: MainProps) {
+export default function Main({ children, background }: MainProps) {
   return (
-    <main className={classNames(["font-sans", styles.main])}>{children}</main>
+    <main
+      className={classNames(["font-sans", styles.main], {
+        [styles.grey]: background === "grey",
+        [styles.white]: background === "white",
+      })}
+    >
+      {children}
+    </main>
   )
 }

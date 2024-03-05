@@ -60,7 +60,7 @@
 
 .mobileDemo {
   margin: 60px auto;
-  max-width: 280px;
+  max-width: 220px;
 }
 
 @media (min-width: 1000px) {

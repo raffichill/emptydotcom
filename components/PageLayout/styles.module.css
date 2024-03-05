@@ -1,0 +1,7 @@
+@media (min-width: 1000px) {
+  .pageWrap {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 40px;
+  }
+}

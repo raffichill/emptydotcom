@@ -1,13 +1,21 @@
 .main {
-  padding: 0;
+  padding: 20px;
   font-size: var(--font-size-s);
+  color: var(--color-primary);
 }
 
 @media (min-width: 1000px) {
   .main {
+    padding: 0;
     font-size: var(--font-size-m);
-    padding: 40px;
     display: flex;
     height: 100vh;
+  }
+  .grey {
+    background: var(--color-canvas);
+  }
+
+  .white {
+    background: var(--color-white);
   }
 }
