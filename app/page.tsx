@@ -4,7 +4,6 @@ import AppIcon from "@/components/AppIcon"
 import Demo from "@/components/Demo"
 import Footer from "@/components/Footer"
 import Main from "@/components/Main"
-import Testimonials from "@/components/Testimonials"
 import classNames from "classnames"
 import Image from "next/image"
 import { useState } from "react"
@@ -16,26 +15,19 @@ export default function Page() {
   return (
     <Main>
       <div
-        className={classNames(styles.flex, {
+        className={classNames(styles.card, {
           [styles.buttonActive]: downloadActive,
         })}
       >
-        <header>
-          <h1 className={styles.header}>
-            <span className="font-mono">Empty</span> is a beautiful and minimal
-            companion for your intermittent fasting practice.
-          </h1>
-        </header>
-        <section className={styles.ctaSection}>
-          <button
-            onClick={() => setDownloadActive((prev) => !prev)}
-            className={styles.button}
-          >
-            <div className={styles.buttonInner}>
-              {downloadActive ? "Scan the QR code" : "Download"}
-            </div>
-          </button>
-          <div className={styles.qrSection}>
+        <div className={styles.cardLayout}>
+          <header>
+            <h1 className={styles.header}>Empty</h1>
+            <p className={styles.subHeader}>
+              A beautiful and minimal companion for your intermittent fasting
+              practice.
+            </p>
+          </header>
+          <section className={styles.ctaSectionDesktop}>
             <div className={styles.qr}>
               <Image
                 src="/qr-code.png"
@@ -44,26 +36,31 @@ export default function Page() {
                 height={200}
               />
             </div>
-          </div>
-        </section>
-        <section className={styles.ctaSectionMobile}>
-          <a
-            href="https://testflight.apple.com/join/1Ex8uyu7"
-            className={styles.button}
-          >
-            <div className={styles.buttonInner}>Download</div>
-          </a>
-        </section>
-        <section className={styles.demoSection}>
-          <Demo />
-        </section>
-        <section className={styles.testimonialsSection}>
-          <Testimonials />
-        </section>
-        <section className={styles.appIconSection}>
-          <AppIcon />
-        </section>
-        <Footer />
+            <div className={styles.appIcon}>
+              <AppIcon />
+            </div>
+            <button
+              onClick={() => setDownloadActive((prev) => !prev)}
+              className={styles.button}
+            >
+              <div className={styles.buttonInner}>
+                {downloadActive ? "Scan the QR code" : "Get the app"}
+              </div>
+            </button>
+          </section>
+          <section className={styles.ctaSectionMobile}>
+            <a
+              href="https://testflight.apple.com/join/1Ex8uyu7"
+              className={styles.button}
+            >
+              <div className={styles.buttonInner}>Download</div>
+            </a>
+          </section>
+          <Footer />
+        </div>
+      </div>
+      <div className={styles.demoWrap}>
+        <Demo />
       </div>
     </Main>
   )

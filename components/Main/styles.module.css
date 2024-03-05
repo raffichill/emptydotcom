@@ -1,14 +1,13 @@
 .main {
-  padding: 5rem 20px;
+  padding: 0;
+  font-size: var(--font-size-s);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .main {
-    padding: 7rem 20px;
+    font-size: var(--font-size-m);
+    padding: 40px;
+    display: flex;
+    height: 100vh;
   }
-}
-
-.limit {
-  max-width: 600px;
-  margin: 0 auto;
 }

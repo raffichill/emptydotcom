@@ -1,19 +1,31 @@
+.card {
+  border-radius: 40px;
+  padding: 40px;
+  background: var(--color-white);
+  flex-grow: 1;
+}
+
+.demoWrap {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header {
-  font-size: 1rem;
-  margin: 0 auto;
-  font-weight: normal;
-  max-width: 400px;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-mono);
+  font-weight: 400;
+  margin: 0;
 }
 
 .header strong {
   font-weight: 600;
 }
 
-.flex {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+.subHeader {
+  max-width: 600px;
+  margin-top: 40px;
 }
 
 .ctaSection {
@@ -23,7 +35,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .ctaSection {
     display: flex;
   }
@@ -33,21 +45,22 @@
 }
 
 .appIconSection {
-  display: flex;
-  justify-content: center;
+  margin: 40px 0;
 }
 
 .button {
+  text-align: center;
   display: inline-flex;
+  font-size: var(--font-size-m);
   background: var(--color-orange-light);
   color: var(--color-orange-dark);
   text-decoration: none;
   border: 0;
-  height: 45px;
+  height: 60px;
   line-height: 45px;
   border-radius: 10rem;
   cursor: pointer;
-  width: 140px;
+  width: 180px;
   transition: color 250ms, background 100ms, width 250ms var(--bounce-easing);
   align-items: center;
   overflow: hidden;
@@ -60,7 +73,7 @@
 .buttonActive .button {
   background: var(--color-black);
   color: var(--color-white);
-  width: 210px;
+  width: 260px;
   cursor: default;
 }
 
@@ -69,11 +82,11 @@
 }
 
 .buttonInner {
-  width: 210px;
+  width: 260px;
   flex-shrink: 0;
   text-align: center;
   position: relative;
-  left: -35px;
+  left: -40px;
   transition: left 250ms var(--bounce-easing);
 }
 
@@ -81,25 +94,10 @@
   left: 0;
 }
 
-.qrSection {
-  overflow: hidden;
-  height: 0;
-  transition: height 250ms var(--bounce-easing);
-}
-
-.buttonActive .qrSection {
-  height: 220px;
+.appIcon {
+  margin: 40px 0;
 }
 
 .qr {
-  opacity: 0;
-  margin-top: 1rem;
-  position: relative;
-  top: 5rem;
-  transition: opacity 250ms, top 250ms var(--bounce-easing);
-}
-
-.buttonActive .qr {
-  top: 0;
-  opacity: 1;
+  margin: 40px 0;
 }

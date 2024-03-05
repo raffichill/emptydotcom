@@ -1,9 +1,0 @@
-.testimonials li {
-  margin-top: 0.5rem;
-  list-style: none;
-  color: var(--color-grey);
-}
-
-.testimonials li.current {
-  color: var(--color-black);
-}
