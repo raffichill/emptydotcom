@@ -16,10 +16,11 @@ export default function Page() {
       <Card>
         <div
           className={classNames(styles.cardLayout, {
-            [styles.buttonActive]: downloadActive,
+            [styles.downloadActive]: downloadActive,
           })}
         >
           <div>
+            {/* Desktop header */}
             <header className={styles.desktopHeader}>
               <h1 className={styles.title}>Empty</h1>
               <h2 className={styles.subtitle}>
@@ -27,33 +28,42 @@ export default function Page() {
                 practice.
               </h2>
             </header>
+
+            {/* Mobile header */}
             <header className={styles.mobileHeader}>
               <h1 className={styles.mobileTitle}>
                 <span className="font-mono">Empty</span> is beautiful and
                 minimal companion for your intermittent fasting practice.
               </h1>
             </header>
+
+            {/* Desktop CTA */}
             <section className={styles.ctaSectionDesktop}>
               <div className={styles.appIcon}>
                 <div>
-                  <AppIcon isActive={downloadActive} />
+                  <AppIcon size="large" tilt isActive={downloadActive} />
                 </div>
               </div>
               <button
                 onClick={() => setDownloadActive((prev) => !prev)}
-                className={styles.button}
+                className={styles.desktopButton}
               >
-                <div className={styles.buttonInner}>
+                <div className={styles.desktopButtonInner}>
                   {downloadActive ? "Scan the QR code" : "Get the app"}
                 </div>
               </button>
             </section>
+
+            {/* Mobile CTA */}
             <section className={styles.ctaSectionMobile}>
               <a
                 href="https://testflight.apple.com/join/1Ex8uyu7"
-                className={styles.button}
+                className={styles.mobileButton}
               >
-                <div className={styles.buttonInner}>Download</div>
+                <div>
+                  <AppIcon size="small" />
+                </div>
+                <div>Download</div>
               </a>
             </section>
           </div>

@@ -1,12 +1,24 @@
 .icon {
-  width: 100%;
-  border-radius: 25px;
+  flex-grow: 0;
+  border-radius: 25%;
   background: url("/icon-sprite.png") no-repeat;
-  background-size: 120px 2160px;
-  transform: rotate(-3deg);
+  background-size: cover;
   overflow: hidden;
   transition: transform 250ms var(--bounce-easing);
-  aspect-ratio: 1/1;
+}
+
+.small {
+  width: 16px;
+  height: 16px;
+}
+
+.large {
+  width: 120px;
+  height: 120px;
+}
+
+.tilt {
+  transform: rotate(-3deg);
 }
 
 .qr {

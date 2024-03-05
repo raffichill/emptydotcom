@@ -96,7 +96,7 @@
   }
 }
 
-.button {
+.desktopButton {
   text-align: center;
   display: inline-flex;
   font-size: var(--font-size-m);
@@ -114,22 +114,22 @@
   overflow: hidden;
 }
 
-.button:hover {
+.desktopButton:hover {
   background: var(--color-orange-light-hover);
 }
 
-.buttonActive .button {
+.downloadActive .desktopButton {
   background: var(--color-black);
   color: var(--color-white);
   width: 260px;
   cursor: default;
 }
 
-.button:active {
+.desktopButton:active {
   transform: scale(0.95);
 }
 
-.buttonInner {
+.desktopButtonInner {
   width: 260px;
   flex-shrink: 0;
   text-align: center;
@@ -138,11 +138,29 @@
   transition: left 200ms var(--bounce-easing);
 }
 
-.buttonActive .buttonInner {
+.downloadActive .desktopButtonInner {
   left: 0;
 }
 
 .appIcon {
   width: 120px;
   margin: 60px 0;
+}
+
+.mobileButton {
+  text-align: center;
+  display: inline-flex;
+  font-size: 17px;
+  background: var(--color-black);
+  font-weight: 500;
+  color: var(--color-white);
+  text-decoration: none;
+  border: 0;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 1rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  align-items: center;
+  gap: 8px;
 }
