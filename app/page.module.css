@@ -1,15 +1,21 @@
-.card {
-  border-radius: 40px;
-  padding: 40px;
-  background: var(--color-white);
-  flex-grow: 1;
+.cardLayout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.demoWrap {
+.demo {
   width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 1400px) {
+  .demo {
+    width: 40vw;
+  }
 }
 
 .header {
@@ -25,27 +31,22 @@
 
 .subHeader {
   max-width: 600px;
-  margin-top: 40px;
+  margin: 40px 0;
+  font-weight: 400;
+  font-size: var(--font-size-l);
 }
 
-.ctaSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.ctaSectionDesktop {
   display: none;
 }
 
 @media (min-width: 1000px) {
-  .ctaSection {
-    display: flex;
-  }
   .ctaSectionMobile {
     display: none;
   }
-}
-
-.appIconSection {
-  margin: 40px 0;
+  .ctaSectionDesktop {
+    display: block;
+  }
 }
 
 .button {
@@ -61,7 +62,7 @@
   border-radius: 10rem;
   cursor: pointer;
   width: 180px;
-  transition: color 250ms, background 100ms, width 250ms var(--bounce-easing);
+  transition: color 200ms, background 150ms, width 200ms var(--bounce-easing);
   align-items: center;
   overflow: hidden;
 }
@@ -87,7 +88,7 @@
   text-align: center;
   position: relative;
   left: -40px;
-  transition: left 250ms var(--bounce-easing);
+  transition: left 200ms var(--bounce-easing);
 }
 
 .buttonActive .buttonInner {
@@ -95,9 +96,6 @@
 }
 
 .appIcon {
-  margin: 40px 0;
-}
-
-.qr {
-  margin: 40px 0;
+  width: 120px;
+  margin: 60px 0;
 }

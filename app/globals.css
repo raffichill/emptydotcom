@@ -8,8 +8,14 @@ html {
   font-size: 16px;
   line-height: 1.3;
   color: var(--color-primary);
-  background: var(--color-canvas);
+  background: var(--color-white);
   -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 1000px) {
+  html {
+    background: var(--color-canvas);
+  }
 }
 
 :root {
@@ -29,7 +35,7 @@ html {
   --font-size-xl: 48px;
 
   /* Transitions */
-  --bounce-easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --bounce-easing: cubic-bezier(0.445, 0.185, 0, 1.61);
 }
 
 ::selection {

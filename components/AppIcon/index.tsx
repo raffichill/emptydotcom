@@ -1,9 +1,14 @@
 "use client"
 
+import classNames from "classnames"
 import { useEffect, useState } from "react"
 import styles from "./styles.module.css"
 
-export default function AppIcon() {
+interface AppIconProps {
+  isActive?: boolean
+}
+
+export default function AppIcon({ isActive }: AppIconProps) {
   const frameCount = 18
   const speed = 400
 
@@ -11,12 +16,19 @@ export default function AppIcon() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFrame((curFrame + 1) % frameCount)
+      !isActive && setFrame((curFrame + 1) % frameCount)
     }, speed)
     return () => clearInterval(interval)
-  }, [curFrame])
+  }, [curFrame, isActive])
 
   const backgroundPosition = `0 -${curFrame * 120}px`
 
-  return <div className={styles.icon} style={{ backgroundPosition }}></div>
+  return (
+    <div
+      className={classNames(styles.icon, { [styles.iconActive]: isActive })}
+      style={{ backgroundPosition }}
+    >
+      <div className={styles.qr} />
+    </div>
+  )
 }
