@@ -2,9 +2,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, link your local instance to Vercel:
+First, install the Vercel CLI and link your local instance to Vercel:
 
 ```
+npm i -g vercel
 vercel link
 ```
 
