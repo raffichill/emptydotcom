@@ -2,7 +2,19 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, link your local instance to Vercel:
+
+```
+vercel link
+```
+
+Then pull down the environment variables:
+
+```
+vercel env pull
+```
+
+Next, run the development server:
 
 ```bash
 npm run dev
