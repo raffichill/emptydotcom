@@ -4,27 +4,27 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, install the Vercel CLI and link your local instance to Vercel:
 
-```
+```bash
 npm i -g vercel
 vercel link
 ```
 
 Then pull down the environment variables:
 
-```
+```bash
 vercel env pull
 ```
 
-Next, run the development server:
+Next, install the NPM modules:
+
+```bash
+npm install
+```
+
+Finally, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
