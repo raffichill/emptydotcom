@@ -64,7 +64,7 @@ export default function Page() {
                 <div>
                   <AppIcon size="small" />
                 </div>
-                <div>Download</div>
+                <div>Available for iPhone</div>
               </a>
             </section>
           </div>

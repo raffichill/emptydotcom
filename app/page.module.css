@@ -161,15 +161,16 @@
 .mobileButton {
   text-align: center;
   display: inline-flex;
-  font-size: 17px;
-  background: var(--color-black);
+  font-size: 16px;
+  letter-spacing: -0.3px;
+  background: var(--color-black); 
   font-weight: 500;
   color: var(--color-white);
   text-decoration: none;
   border: 0;
   height: 36px;
   line-height: 36px;
-  padding: 0 1rem;
+  padding: 0 1.1rem;
   border-radius: 10rem;
   cursor: pointer;
   align-items: center;
