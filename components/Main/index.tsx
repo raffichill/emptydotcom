@@ -11,7 +11,6 @@ export default function Main({ children, background }: MainProps) {
     <main
       className={classNames(["font-sans", styles.main], {
         [styles.grey]: background === "grey",
-        [styles.white]: background === "white",
       })}
     >
       {children}

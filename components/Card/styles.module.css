@@ -4,6 +4,8 @@
 }
 
 @media (min-width: 1000px) {
+  
+  /* Not used anymore */
   .card {
     border-radius: 40px;
     padding: 40px;

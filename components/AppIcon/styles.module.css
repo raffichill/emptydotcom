@@ -4,7 +4,7 @@
   background: url("/icon-sprite.png") no-repeat;
   background-size: cover;
   overflow: hidden;
-  transition: transform 250ms var(--bounce-easing);
+  transition: transform 200ms var(--bounce-easing);
 }
 
 .small {
