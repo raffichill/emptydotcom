@@ -34,7 +34,8 @@
 
 .mobileTitle {
   font-size: 15px;
-  margin: 60px auto;
+  letter-spacing: -0.5px;
+  margin: 40px auto;
   font-weight: 400;
   max-width: 320px;
 }
@@ -45,6 +46,7 @@
 
 @media (min-width: 1000px) {
   .desktopDemo {
+    width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +61,7 @@
 }
 
 .mobileDemo {
-  margin: 60px auto;
+  margin: 40px auto;
   max-width: 220px;
 }
 
