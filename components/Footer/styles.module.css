@@ -15,10 +15,11 @@
 .footer a {
   text-decoration: none;
   color: var(--color-black);
+  letter-spacing: -0.7px;
 }
 
 .footer a:hover {
-  text-decoration: underline;
+  color: #FF5701;
 }
 
 @media (min-width: 1000px) {

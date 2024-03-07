@@ -24,8 +24,9 @@ export default function Page() {
             <header className={styles.desktopHeader}>
               <h1 className={styles.title}>Empty</h1>
               <h2 className={styles.subtitle}>
-                A beautiful and minimal companion for your intermittent fasting
-                practice.
+                A beautiful and minimal companion for
+                <br />
+                your intermittent fasting practice.
               </h2>
             </header>
 

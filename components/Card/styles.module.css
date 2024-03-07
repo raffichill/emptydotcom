@@ -1,6 +1,6 @@
 .card {
   padding: 0;
-  background: var(--color-white);
+  /* background: var(--color-white); */
 }
 
 @media (min-width: 1000px) {
@@ -9,11 +9,11 @@
     padding: 40px;
     height: 100%;
     overflow-x: auto;
-    box-shadow: 7px 15px 37px 0px rgba(120, 120, 120, 0.1),
+    /* box-shadow: 7px 15px 37px 0px rgba(120, 120, 120, 0.1),
       28px 61px 67px 0px rgba(120, 120, 120, 0.09),
       64px 136px 90px 0px rgba(120, 120, 120, 0.05),
       114px 243px 107px 0px rgba(120, 120, 120, 0.01),
-      178px 379px 117px 0px rgba(120, 120, 120, 0);
+      178px 379px 117px 0px rgba(120, 120, 120, 0); */
   }
   .cardWrap {
     padding: 40px 0 40px 40px;

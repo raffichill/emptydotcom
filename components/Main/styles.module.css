@@ -1,13 +1,14 @@
 .main {
   padding: 20px;
-  font-size: var(--font-size-s);
+  font-size: 15px;
   color: var(--color-primary);
 }
 
 @media (min-width: 1000px) {
   .main {
     padding: 0;
-    font-size: var(--font-size-m);
+    font-size: 20px;
+    letter-spacing: -0.5px;
     display: flex;
     height: 100vh;
   }

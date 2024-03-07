@@ -19,10 +19,10 @@ html {
 :root {
   /* Colors */
   --color-black: #000;
-  --color-grey: #818181;
-  --color-canvas: #f1f1f1;
+  --color-grey: #F4F1ED;
+  --color-canvas: #F4F1ED;
   --color-white: #fff;
-  --color-orange-light: #ffede6;
+  --color-orange-light: #F5E1D6;
   --color-orange-light-hover: #f6e0d7;
   --color-orange-dark: #ff4f04;
 

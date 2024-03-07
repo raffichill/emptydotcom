@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Main background="white">
+    <Main background="grey">
       <PagePad>
         <Title>Terms of Use</Title>
         <RichText>
