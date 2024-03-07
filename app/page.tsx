@@ -24,7 +24,7 @@ export default function Page() {
             <header className={styles.desktopHeader}>
               <h1 className={styles.title}>Empty</h1>
               <h2 className={styles.subtitle}>
-                A beautiful and minimal companion for
+                A delightfully focused companion for
                 <br />
                 your intermittent fasting practice.
               </h2>
@@ -33,8 +33,8 @@ export default function Page() {
             {/* Mobile header */}
             <header className={styles.mobileHeader}>
               <p className={styles.mobileTitle}>
-                <span className="font-mono">Empty</span> is a beautiful and
-                minimal companion for your intermittent fasting practice.
+                <span className="font-mono">Empty</span> is a delightfully
+                focused companion for your intermittent fasting practice.
               </p>
             </header>
 

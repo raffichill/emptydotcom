@@ -16,7 +16,7 @@ const dmMono = DM_Mono({
 
 const metaTitle = "Empty Fasting"
 const metaDescription =
-  "Empty is a beautiful and minimal companion for your intermittent fasting practice."
+  "Empty is a delightfully focused companion for your intermittent fasting practice."
 const metaImageUrl = "/social.png"
 
 export const metadata: Metadata = {
