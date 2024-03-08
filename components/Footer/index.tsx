@@ -15,7 +15,9 @@ export default function Footer() {
           <Link href="/contact">Contact</Link>
         </li>
         <li>
-          <a href="https://notion.so">Press Kit</a>
+          <a href="https://emptyfasting.notion.site/Press-Kit-for-Empty-Fasting-b2e1d3f092654d67b4d2c6724eb01700?pvs=4">
+            Press Kit
+          </a>
         </li>
       </ul>
     </footer>
