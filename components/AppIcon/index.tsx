@@ -1,6 +1,7 @@
 "use client"
 
 import classNames from "classnames"
+import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import styles from "./styles.module.css"
 
@@ -10,12 +11,17 @@ interface AppIconProps {
   tilt?: boolean
 }
 
+const spring = {
+  type: "spring",
+  mass: 1,
+  stiffness: 350,
+  damping: 24,
+}
+
 export default function AppIcon({ isActive, tilt, size }: AppIconProps) {
   const frameCount = 18
   const speed = 400
-
   const width = size === "large" ? 120 : 16
-
   const [curFrame, setFrame] = useState(0)
 
   useEffect(() => {
@@ -28,17 +34,27 @@ export default function AppIcon({ isActive, tilt, size }: AppIconProps) {
   // Percent to shift the background by
   const backgroundPosition = `0 -${curFrame * width}px`
 
+  const iconVariants = {
+    active: { scale: 1.25, rotate: 0 },
+    inactive: { scale: 1, rotate: tilt ? -3 : 0 },
+  }
+
   return (
-    <div
+    <motion.div
       className={classNames(styles.icon, {
-        [styles.iconActive]: isActive,
-        [styles.tilt]: tilt,
         [styles.large]: size === "large",
         [styles.small]: size === "small",
       })}
       style={{ backgroundPosition }}
+      animate={isActive ? "active" : "inactive"}
+      variants={iconVariants}
+      transition={spring}
     >
-      <div className={styles.qr} />
-    </div>
+      <motion.div
+        className={styles.qr}
+        animate={{ opacity: isActive ? 1 : 0 }}
+        transition={{ duration: 0.15 }}
+      />
+    </motion.div>
   )
 }
