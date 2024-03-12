@@ -1,7 +1,6 @@
 "use client"
 
 import AppIcon from "@/components/AppIcon"
-import Card from "@/components/Card"
 import Demo from "@/components/Demo"
 import Footer from "@/components/Footer"
 import Main from "@/components/Main"
@@ -13,9 +12,9 @@ export default function Page() {
   const [downloadActive, setDownloadActive] = useState(false)
   return (
     <Main background="grey">
-      <Card>
+      <div className={styles.flexWrap}>
         <div
-          className={classNames(styles.cardLayout, {
+          className={classNames(styles.mainContent, {
             [styles.downloadActive]: downloadActive,
           })}
         >
@@ -73,9 +72,9 @@ export default function Page() {
           </div>
           <Footer />
         </div>
-      </Card>
-      <div className={styles.desktopDemo}>
-        <Demo />
+        <div className={styles.desktopDemo}>
+          <Demo />
+        </div>
       </div>
     </Main>
   )

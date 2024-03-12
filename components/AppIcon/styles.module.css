@@ -26,7 +26,7 @@
   height: 100%;
   background: var(--color-black);
   background-image: url("/qr-code.png");
-  background-size: 90px 90px;
+  background-size: 130px 130px;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
@@ -34,7 +34,7 @@
 }
 
 .iconActive {
-  transform: scale(1.25) translateX(14px);
+  transform: scale(1.25);
 }
 .iconActive .qr {
   opacity: 1;

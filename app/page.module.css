@@ -1,11 +1,23 @@
-.cardLayout {
+.flexWrap {
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .flexWrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.mainContent {
   text-align: center;
 }
 
 @media (min-width: 1000px) {
-  .cardLayout {
+  .mainContent {
     text-align: center;
-    height: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +48,6 @@
   font-size: 15px;
   letter-spacing: -0.5px;
   margin: 40px auto;
-  margin-top: 10px;
   font-weight: 400;
   max-width: 320px;
 }
@@ -47,17 +58,12 @@
 
 @media (min-width: 1000px) {
   .desktopDemo {
-    width: 50vw;
+    padding: 80px 0;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid #000; */
-  }
-}
-
-@media (min-width: 1400px) {
-  .desktopDemo {
-    width: 50vw;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -81,11 +87,9 @@
 }
 
 .subtitle {
-  /* max-width: 600px; */
-  margin: 40px 0;
+  margin: 20px 0 0 0;
   font-weight: 400;
   font-size: 22px;
-  /* border: 2px solid #000; */
 }
 
 .ctaSectionDesktop {
@@ -102,6 +106,7 @@
 }
 
 .desktopButton {
+  margin: 40px 0 0 0;
   text-align: center;
   display: inline-flex;
   font-size: 20px;
@@ -113,7 +118,7 @@
   line-height: 45px;
   border-radius: 10rem;
   cursor: pointer;
-  width: 180px;
+  width: 160px;
   transition: color 200ms, background 150ms, width 200ms var(--bounce-easing);
   align-items: center;
   overflow: hidden;
@@ -126,7 +131,7 @@
 .downloadActive .desktopButton {
   background: var(--color-black);
   color: var(--color-white);
-  width: 260px;
+  width: 220px;
   cursor: default;
 }
 
@@ -135,12 +140,12 @@
 }
 
 .desktopButtonInner {
-  width: 260px;
+  width: 220px;
   flex-shrink: 0;
   text-align: center;
   position: relative;
-  left: -40px;
-  transition: left 420ms var(--bounce-easing);
+  left: -30px;
+  transition: width 420ms var(--bounce-easing);
 }
 
 .downloadActive .desktopButtonInner {
@@ -148,23 +153,19 @@
 }
 
 .appIcon {
-  width: 100%; /* Make the .appIcon take up the full width of its parent */
-  height: 160px;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin: 20px 0;
-  /* border: 2px solid #000; */
+  margin: 60px 0 0 0;
 }
-
 
 .mobileButton {
   text-align: center;
   display: inline-flex;
   font-size: 16px;
   letter-spacing: -0.3px;
-  background: var(--color-black); 
+  background: var(--color-black);
   font-weight: 500;
   color: var(--color-white);
   text-decoration: none;

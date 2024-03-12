@@ -7,22 +7,17 @@
 html {
   font-size: 16px;
   line-height: 1.3;
+  background: var(--color-canvas);
   -webkit-font-smoothing: antialiased;
-}
-
-@media (min-width: 1000px) {
-  html {
-    background: var(--color-canvas);
-  }
 }
 
 :root {
   /* Colors */
   --color-black: #000;
-  --color-grey: #F4F1ED;
-  --color-canvas: #F4F1ED;
+  --color-grey: #f4f1ed;
+  --color-canvas: #f4f1ed;
   --color-white: #fff;
-  --color-orange-light: #F5E1D6;
+  --color-orange-light: #f5e1d6;
   --color-orange-light-hover: #f6e0d7;
   --color-orange-dark: #ff4f04;
 
