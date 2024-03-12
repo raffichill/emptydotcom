@@ -66,7 +66,7 @@ export default function Page() {
             {/* Mobile CTA */}
             <section className={styles.ctaSectionMobile}>
               <a
-                href="https://testflight.apple.com/join/1Ex8uyu7"
+                href="https://apple.co/3VbnAx6"
                 className={styles.mobileButton}
               >
                 <div>
