@@ -46,6 +46,7 @@ export default function AppIcon({ isActive, tilt, size }: AppIconProps) {
     >
       <motion.div
         className={styles.qr}
+        initial={{ opacity: 0 }} // Set the initial opacity
         animate={{ opacity: isActive ? 1 : 0 }}
         transition={{ duration: 0.15 }}
       />
