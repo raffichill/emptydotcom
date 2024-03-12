@@ -119,7 +119,6 @@
   border-radius: 10rem;
   cursor: pointer;
   width: 160px;
-  transition: color 200ms, background 150ms, width 200ms var(--bounce-easing);
   align-items: center;
   overflow: hidden;
 }
@@ -135,17 +134,12 @@
   cursor: default;
 }
 
-.desktopButton:active {
-  transform: scale(0.95);
-}
-
 .desktopButtonInner {
   width: 220px;
   flex-shrink: 0;
   text-align: center;
   position: relative;
   left: -30px;
-  transition: width 420ms var(--bounce-easing);
 }
 
 .downloadActive .desktopButtonInner {

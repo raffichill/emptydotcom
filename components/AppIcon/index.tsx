@@ -1,5 +1,6 @@
 "use client"
 
+import { emptySpring } from "@/helpers/animations"
 import classNames from "classnames"
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
@@ -9,13 +10,6 @@ interface AppIconProps {
   size: "small" | "large"
   isActive?: boolean
   tilt?: boolean
-}
-
-const spring = {
-  type: "spring",
-  mass: 1,
-  stiffness: 350,
-  damping: 24,
 }
 
 export default function AppIcon({ isActive, tilt, size }: AppIconProps) {
@@ -48,7 +42,7 @@ export default function AppIcon({ isActive, tilt, size }: AppIconProps) {
       style={{ backgroundPosition }}
       animate={isActive ? "active" : "inactive"}
       variants={iconVariants}
-      transition={spring}
+      transition={emptySpring}
     >
       <motion.div
         className={styles.qr}

@@ -4,7 +4,9 @@ import AppIcon from "@/components/AppIcon"
 import Demo from "@/components/Demo"
 import Footer from "@/components/Footer"
 import Main from "@/components/Main"
+import { emptySpring } from "@/helpers/animations"
 import classNames from "classnames"
+import { motion } from "framer-motion"
 import { useState } from "react"
 import styles from "./page.module.css"
 
@@ -44,14 +46,21 @@ export default function Page() {
                   <AppIcon size="large" tilt isActive={downloadActive} />
                 </div>
               </div>
-              <button
+              <motion.button
                 onClick={() => setDownloadActive((prev) => !prev)}
                 className={styles.desktopButton}
+                animate={{
+                  backgroundColor: downloadActive
+                    ? "var(--color-black)"
+                    : "var(--color-orange-light)",
+                  width: downloadActive ? 220 : 160,
+                }}
+                transition={emptySpring} // Apply the spring transition to the color and width
               >
                 <div className={styles.desktopButtonInner}>
                   {downloadActive ? "Scan the QR code" : "Get the app"}
                 </div>
-              </button>
+              </motion.button>
             </section>
 
             {/* Mobile CTA */}
