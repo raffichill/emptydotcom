@@ -1,6 +1,6 @@
 .demo {
   position: relative;
-  max-width: 230px;
+  max-width: 244px;
   opacity: 0;
   animation: fadeIn 250ms 250ms forwards;
 }
